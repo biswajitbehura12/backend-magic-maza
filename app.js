@@ -26,6 +26,9 @@ app.use(limiter);
 // Mount API routes
 app.use('/', apiRoutes);
 
+app.get("/", (req, res) => {
+  res.send("✅ magic maza backend is running smoothly!");
+});
 // Error handler (should be after all routes)
 app.use(errorHandler);
 
