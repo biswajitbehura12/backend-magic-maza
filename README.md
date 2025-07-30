@@ -36,9 +36,7 @@ Use cases include:
   "country": "India"
 }
 📁 Project Structure
-bash
-Copy
-Edit
+
 backend-magic-maza/
 ├── controllers/       # Address parsing logic
 ├── models/            # (Optional) MongoDB models
@@ -63,9 +61,7 @@ dotenv for config
 
 ⚙️ Setup Instructions
 1. Clone & Install
-bash
-Copy
-Edit
+
 git clone https://github.com/biswajitbehura12/backend-magic-maza.git
 cd backend-magic-maza
 npm install
@@ -73,8 +69,7 @@ npm install
 .env file in the root directory:
 
 env
-Copy
-Edit
+
 PORT=5000
 AI_PROVIDER=gemini        # Options: 'gemini' or 'openai'
 AI_API_KEY=your_api_key_here
@@ -83,25 +78,19 @@ GEMINI_MODEL=gemini-pro   # Only if using Gemini
 You can also save this as .env.example for reference.
 
 🚀 Run the Project
-bash
-Copy
-Edit
+
 npm start
 🔗 API Endpoint
 Method	Endpoint	Description
 POST	/api/parse	Parses raw address input
 
 📥 Sample Request
-json
-Copy
-Edit
+
 {
   "address": "2nd Floor, Sky Towers, MG Road, Bangalore 560001"
 }
 📤 Sample Response
-json
-Copy
-Edit
+
 {
   "floor": "2nd Floor",
   "building": "Sky Towers",
@@ -112,9 +101,7 @@ Edit
   "country": "India"
 }
 📄 .env Example
-env
-Copy
-Edit
+
 PORT=5000
 AI_PROVIDER=gemini
 AI_API_KEY=your_api_key
@@ -150,11 +137,6 @@ This project is licensed under the MIT License.
 
 📖 OpenAI API Docs
 
-yaml
-Copy
-Edit
-
----
 
 ### ✅ Next Steps for You
 
